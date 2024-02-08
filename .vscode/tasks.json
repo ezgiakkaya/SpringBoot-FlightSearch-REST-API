@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "gradle",
+      "id": "/Users/ezgiakkaya/Downloads/flight-search-apibuildflight-search-api",
+      "script": "build",
+      "description": "Assembles and tests this project.",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "project": "flight-search-api",
+      "buildFile": "/Users/ezgiakkaya/Downloads/flight-search-api/build.gradle",
+      "rootProject": "flight-search-api",
+      "projectFolder": "/Users/ezgiakkaya/Downloads/flight-search-api",
+      "workspaceFolder": "/Users/ezgiakkaya/Downloads/flight-search-api",
+      "args": "",
+      "javaDebug": false,
+      "problemMatcher": ["$gradle"],
+      "label": "gradle: build"
+    }
+  ]
+}
