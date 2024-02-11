@@ -44,17 +44,9 @@ Inside the `flightsearchapi` package, you will find the various classes that mak
 
 This package structure follows the standard convention for Spring Boot applications and contains all the necessary classes for running the Flight Search REST API. Inside this package, you will find the controllers, services, repositories, and models used to implement the API's functionality.
 
-### Navigating the Project
 
-To navigate to the main classes, follow the directory path starting from the root of the project:
 
-1. Navigate to the `bin` directory.
-2. Proceed to the `main` directory.
-3. Follow the path to `com/example/flightsearchapi`.
-
-Inside the `flightsearchapi` package, you will find the various classes that make up the core of the Flight Search REST API. This structure is designed to keep the project organized and to facilitate easy maintenance and enhancement of the API features.
-
-###Technologies Used
+##Technologies Used
 - **Java:** The primary programming language used for development.
 - **Spring Boot:** A powerful framework for building robust and scalable Java applications.
 - **Spring Security:** The Spring Security framework is used to implement authentication and authorization features, ensuring secure access to the API.
