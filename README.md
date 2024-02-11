@@ -87,4 +87,64 @@ By working on this project, you will gain valuable experience and knowledge in t
 - Implemented robust security using Spring Security for authentication and authorization.
 - Developed and scheduled background jobs for data updates, ensuring real-time information for users.
 
+
+## Flight Query Example
+
+This section demonstrates how to query for flights using the API endpoint and provides an example of the response format.
+
+### Query
+
+To query for flights between specific airports on specific dates, use the following URL format:
+
+http://localhost:3000/flights/more-search?departure=New%20York%20JFK&arrival=Los%20Angeles%20LAX&departureDate=2024-02-07T21:02:33.578&returnDate=2024-02-08T02:02:33.578
+
+
+Replace `departure`, `arrival`, `departureDate`, and `returnDate` parameters with your desired values.
+
+### Response Format
+
+The response is structured as a list of lists, where each inner list contains flight instances for a specific leg of the journey. Each flight instance includes details such as the flight ID, departure and arrival airports, departure and return times, and the price.
+
+#### Example Response
+
+```json
+[
+  [
+    {
+      "id": "65c2cf6696b47a002562b7ea",
+      "departureAirport": "New York JFK",
+      "arrivalAirport": "Los Angeles LAX",
+      "departureTime": "2024-02-07T03:31:34.12",
+      "returnTime": "2024-02-07T08:31:34.12",
+      "price": 199.99
+    },
+    {
+      "id": "65c2cf74b515096f3b1f6eb1",
+      "departureAirport": "New York JFK",
+      "arrivalAirport": "Los Angeles LAX",
+      "departureTime": "2024-02-07T03:31:48.506",
+      "returnTime": "2024-02-07T08:31:48.506",
+      "price": 199.99
+    }
+  ],
+  [
+    {
+      "id": "65c2cf6696b47a002562b7eb",
+      "departureAirport": "Los Angeles LAX",
+      "arrivalAirport": "New York JFK",
+      "departureTime": "2024-02-08T03:31:34.121",
+      "returnTime": "2024-02-08T08:31:34.121",
+      "price": 199.99
+    },
+    {
+      "id": "65c2cf74b515096f3b1f6eb2",
+      "departureAirport": "Los Angeles LAX",
+      "arrivalAirport": "New York JFK",
+      "departureTime": "2024-02-08T03:31:48.506",
+      "returnTime": "2024-02-08T08:31:48.506",
+      "price": 199.99
+    }
+  ]
+]
+
 Feel free to reach out to eakkaya21@ku.edu.tr if you have any questions or need assistance with this project.🌟🛫
